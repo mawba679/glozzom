@@ -1,0 +1,39 @@
+.navbar{
+    background: #000000;
+}
+
+.navbar .nav-item{
+    padding-left: 1em !important;
+}
+
+.navbar .nav-item .nav-link{
+    text-transform: uppercase;
+}
+
+#banner .carousel-item{
+    height: 450px;
+}
+
+.carousel_image_1{
+    background: url("../images/image1.jpeg");
+    background-size: cover;
+}
+
+.carousel_image_2{
+    background: url("../images/image2.jpeg");
+    background-size: cover;
+}
+
+.carousel_image_3{
+    background: url("../images/image3.jpeg");
+    background-size: cover;
+}
+
+
+
+@media (max-width: 767px) {
+    .navbar .nav-item{
+        padding-left: 0em !important;
+    }
+}
+
