@@ -10,6 +10,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="images/icon.png">
 
         <!--Stylesheets-->
+        <link rel="stylesheet" href="css/uikit.min.css">
         <link rel="stylesheet" href="css/fontawesome-all.css">
         <link rel="stylesheet" href="css/navbar-fixed.css">
         <link rel="stylesheet" href="css/bootstrap.css">
@@ -17,7 +18,7 @@
     </head>
     <body>
         <!--Navbar Start-->
-        <nav class="navbar navbar-expand-md navbar-dark">
+        <nav class="navbar navbar-expand-md navbar-dark" uk-sticky="top: 200; animation: uk-animation-slide-top; bottom: #sticky-on-scroll-up">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Glozzom</a>
                 <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -137,7 +138,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12 mt-5 pt-4">
-                            <h3>Are You Ready To Get Started?</h3>
+                            <h3 class="text-light">Are You Ready To Get Started?</h3>
                             <p class="lead">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quaerat voluptatem laboriosam vero recusandae repellendus? Impedit iure est sit voluptatum blanditiis cum sequi laudantium quod dicta, a quaerat vel, obcaecati!
                             </p>
@@ -149,7 +150,7 @@
         <!--Get Started Section End-->
 
 
-        <!--Info Section Start-->
+        <!--Home-Info Section Start-->
         <section class="py-5" id="info">
             <div class="container">
                 <div class="row">
@@ -166,7 +167,115 @@
                 </div>
             </div>
         </section>
-        <!--Info Section End-->
+        <!--Home-Info Section End-->
+
+
+        <!--Home-Video Section Start-->
+        <section class="text-center" id="homeVideo">
+            <div class="overlay_dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mt-5 pt-4">
+                            <div uk-lightbox>
+                                <a class="text-light" href="https://youtu.be/43rTanJhQqM">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                            <h2 class="text-light mt-3">Bootstrap 4 Crash Course</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home-Video Section End-->
+
+
+        <!--Home-Photo-Galary Section Start-->
+        <section class="py-5" id="photoGalary" uk-lightbox>
+            <div class="container">
+                <div class="row mb-3">
+                    <div class="col-12 text-center">
+                        <h2>Photo Gallery</h2>
+                        <p class="lead">
+                            Check out our photos
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="images/image1.jpeg">
+                            <img class="img-fluid" src="images/image1.jpeg" alt="image1">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="images/image2.jpeg">
+                            <img class="img-fluid" src="images/image2.jpeg" alt="image2">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="images/image3.jpeg">
+                            <img class="img-fluid" src="images/image3.jpeg" alt="image3">
+                        </a>
+                    </div>
+                </div>
+                <div class="row mt-0 mt-md-4">
+                    <div class="col-md-4">
+                        <a href="images/image4.jpeg">
+                            <img class="img-fluid" src="images/image4.jpeg" alt="image4">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="images/image5.jpeg">
+                            <img class="img-fluid" src="images/image5.jpeg" alt="image5">
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="images/image6.jpeg">
+                            <img class="img-fluid" src="images/image6.jpeg" alt="image6">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home-Photo-Galary Section End-->
+
+
+        <!--Newsletter Section Start-->
+        <section class="py-5 bg-dark text-light text-center" id="newsLetter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="text-light">Signup For Our Newsletter</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis magnam similique esse assumenda quasi repellendus illum perferendis quos aliquid possimus.
+                        </p>
+                        <form class="form-inline justify-content-center" action="" method="POST">
+                            <label class="sr-only" for="name">Name</label>
+                            <input class="form-control m-2" type="text" name="name" placeholder="Enter Name">
+                            <label class="sr-only" for="email">Email</label>
+                            <input class="form-control m-2" type="text" name="email" placeholder="Enter Email">
+                            <input class="btn btn-primary m-2" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Newsletter Section End-->
+
+
+        <!--Copyright Section Start-->
+        <section class="text-center text-light py-3" id="copyRight">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="lead mb-0">
+                            Copyright 2018 &copy; Glozzom
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Copyright Section End-->
 
 
         <!--Scripts-->
@@ -174,5 +283,8 @@
         <script type="text/javascript" src="js/navbar-fixed.js"></script>
         <script type="text/javascript" src="js/popper.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/uikit.min.js"></script>
+        <script type="text/javascript" src="js/uikit-icons.min.js"></script>
     </body>
 </html>
+
