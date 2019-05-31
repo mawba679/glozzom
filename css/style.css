@@ -52,6 +52,28 @@
     height: 100%;
 }
 
+#homeVideo{
+    position: relative;
+    background: url("../images/people.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 250px;
+}
+
+#homeVideo .overlay_dark .fas{
+    font-size: 50px;
+    color: #ff0000;
+}
+
+#photoGalary img{
+    min-height: 250px;
+}
+
+#copyRight{
+    background: #000000;
+}
+
 
 
 
