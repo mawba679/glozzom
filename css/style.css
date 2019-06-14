@@ -74,9 +74,21 @@
     background: #000000;
 }
 
+#aboutHeader{
+    background: url("../images/image1.jpeg");
+    background-size: cover;
+    height: 200px;
+    background-attachment: fixed;
+}
 
+#aboutInfo img{
+    height: 350px;
+    width: 350px;
+}
 
-
+#aboutIcon .fa, .fab{
+    font-size: 50px;
+}
 
 @media (max-width: 767px) {
     .navbar .nav-item{
